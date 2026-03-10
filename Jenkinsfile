@@ -13,14 +13,5 @@ pipeline{
         sh './script.sh'
       }
     }
-    stage('Run Script'){
-      steps{
-        def add:
-          a=5
-          b=3
-          c=a+b
-          print(c)
-      }
-    }
   }
 }
