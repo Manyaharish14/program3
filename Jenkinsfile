@@ -13,7 +13,7 @@ pipeline{
         sh './script.sh'
       }
     }
-    stage('Run Script'){
+    stage('Run python Script'){
       steps{
         py 'chmod +x p3.py'
         py './p3.py'
