@@ -9,6 +9,12 @@ pipeline{
     }
     stage('Run Script'){
       steps{
+        sh 'chmod +x script.sh'
+        sh './script.sh'
+      }
+    }
+    stage('Run Script'){
+      steps{
         py 'chmod +x p3.py'
         py './p3.py'
       }
